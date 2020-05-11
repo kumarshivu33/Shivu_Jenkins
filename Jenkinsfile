@@ -16,6 +16,13 @@ echo "shivu kumar first pipeline"'''
           }
         }
 
+        stage('Adding docker') {
+          steps {
+            echo 'added doker image'
+            fileExists 'Sk_firstjob'
+          }
+        }
+
       }
     }
 
